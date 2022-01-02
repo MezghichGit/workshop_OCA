@@ -10,10 +10,21 @@ public class Test {
 		
 		System.out.println("Taper un nom : ");
 		String nom = s.nextLine(); // lecture d'une chaine de caractère
+		
 		System.out.println("Taper un age : ");
 		int a = s.nextInt();  // lecture d'un entier
 		
-		System.out.println("Vous avez taper : "+nom +" "+a);
+		System.out.println("Taper La moyenne : ");
+		double m = s.nextDouble(); 
+		s.nextLine();
+		System.out.println("Taper une adresse : ");
+		String adr = s.nextLine();
+		
+		
+		//System.out.println("Vous avez taper : "+nom +" "+a);
+		//System.out.println("Vous avez taper : "+m +" "+adr);
+		Etudiant e = new Etudiant(nom,a,m,adr);
+		e.info();
 		
 		
 		/*
